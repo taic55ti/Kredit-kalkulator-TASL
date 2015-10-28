@@ -56,7 +56,19 @@ public class Kredit {
                     double plat = fuel * price;
                     plat=Math.rint(100.0 * plat) / 100.0;
                     resultLabel.setText("<html>Ежемесячный платеж составит <font style='color: red; font-weight: bold;'>" + plat + "</font> рублей.</html>");
-            	c
+             }
+                catch ( NumberFormatException nfe ) {
+                    resultLabel.setText("Проверьте введённые данные");
+                }
+            }
+        });
+        resultLabel = new JLabel("Введите данные для рассчёта");
+        
+        GridBagLayout layout = new GridBagLayout();
+        GridBagConstraints constraints = new GridBagConstraints();
+        constraints.weightx = 1.0;
+        constraints.weighty = 1.0;
+        constraints.insets = new Insets(5, 5, 5, 5);
         
        À
        
