@@ -31,31 +31,31 @@ public class Kredit {
     private JFrame mainFrame;
     
     Kredit() {
-        pLabel = new JLabel("Процентная ставка");
+        pLabel = new JLabel("ГЏГ°Г®Г¶ГҐГ­ГІГ­Г Гї Г±ГІГ ГўГЄГ ");
         pField = new JTextField("0");
         pField.setHorizontalAlignment(JTextField.RIGHT);
         kmLabel = new JLabel("%");
-        termLabel = new JLabel("Количество месяцев");
+        termLabel = new JLabel("ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г¬ГҐГ±ГїГ¶ГҐГў");
         termField = new JTextField("0");
         termField.setHorizontalAlignment(JTextField.RIGHT);
-        litersLabel = new JLabel("м.");
-        priceLabel = new JLabel("Сумма кредита");
+        litersLabel = new JLabel("Г¬.");
+        priceLabel = new JLabel("Г‘ГіГ¬Г¬Г  ГЄГ°ГҐГ¤ГЁГІГ ");
         priceField = new JTextField("0");
         priceField.setHorizontalAlignment(JTextField.RIGHT);
-        rurLabel = new JLabel("Руб.");
-        calcButton = new JButton("Рассчитать");
+        rurLabel = new JLabel("ГђГіГЎ.");
+        calcButton = new JButton("ГђГ Г±Г±Г·ГЁГІГ ГІГј");
         calcButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
-              
+                
             	C
             	
         
-       А
+       ГЂ
        
        
        
-        Л
+        Г‹
         
         mainFrame.pack();
         mainFrame.setVisible(true);
