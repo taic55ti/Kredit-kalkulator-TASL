@@ -58,7 +58,35 @@ public class Kredit {
                     resultLabel.setText("<html>Ежемесячный платеж составит <font style='color: red; font-weight: bold;'>" + plat + "</font> рублей.</html>");
             	c
         
-       À
+            	constraints.gridx = 0;
+                constraints.anchor = GridBagConstraints.WEST;
+                constraints.ipadx = 90;
+                constraints.gridy = 0;
+                layout.setConstraints(pLabel, constraints);
+                constraints.gridy = 1;
+                layout.setConstraints(termLabel, constraints);
+                constraints.gridy = 2;
+                layout.setConstraints(priceLabel, constraints);
+                
+                constraints.gridx = 1;
+                constraints.anchor = GridBagConstraints.EAST;
+                constraints.ipadx = 50;
+                constraints.gridy = 0;
+                layout.setConstraints(pField, constraints);
+                constraints.gridy = 1;
+                layout.setConstraints(termField, constraints);
+                constraints.gridy = 2;
+                layout.setConstraints(priceField, constraints);
+                
+                constraints.gridx = 2;
+                constraints.ipadx = 0;
+                constraints.gridy = 0;
+                layout.setConstraints(kmLabel, constraints);
+                constraints.gridy = 1;
+                layout.setConstraints(litersLabel, constraints);
+                constraints.gridy = 2;
+                layout.setConstraints(rurLabel, constraints);
+                
        
        
        
