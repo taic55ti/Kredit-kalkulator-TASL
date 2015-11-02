@@ -98,12 +98,33 @@ public class Kredit {
                 layout.setConstraints(litersLabel, constraints);
                 constraints.gridy = 2;
                 layout.setConstraints(rurLabel, constraints);
-                
-       
-       
-       
-        Ë
+      constraints.gridx = 0;
+        constraints.gridy = 4;
+        constraints.gridwidth = GridBagConstraints.REMAINDER;
+        constraints.anchor = GridBagConstraints.EAST;
+        layout.setConstraints(calcButton, constraints);
         
+        constraints.gridy = 5;
+        constraints.fill = GridBagConstraints.HORIZONTAL;
+        constraints.anchor = GridBagConstraints.WEST;
+        layout.setConstraints(resultLabel, constraints);
+        
+        mainFrame = new JFrame("Кредитный калькулятор");
+        mainFrame.setSize(600, 450);
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        mainFrame.setLayout(layout);
+        
+        mainFrame.add(pLabel);
+        mainFrame.add(termLabel);
+        mainFrame.add(priceLabel);
+        mainFrame.add(pField);
+        mainFrame.add(termField);
+        mainFrame.add(priceField);
+        mainFrame.add(kmLabel);
+        mainFrame.add(litersLabel);
+        mainFrame.add(rurLabel);
+        mainFrame.add(calcButton);
+        mainFrame.add(resultLabel);
         mainFrame.pack();
         mainFrame.setVisible(true);
     }
